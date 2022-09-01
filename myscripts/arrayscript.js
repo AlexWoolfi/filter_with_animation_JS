@@ -19,8 +19,9 @@ showAnimal(animals, ".out-1-source-img");
 
 
 function addToArray() {
-    if(!Number.isInteger(document.querySelector(".array-index").value)){
-        alert('ТОлько целые числа')
+    if(!Number.isInteger(+document.querySelector('.array-index').value)){
+        alert('ТОлько целые числа');
+        return false;
     }
   let index = parseInt(document.querySelector(".array-index").value);
   if(index>50) {
@@ -29,8 +30,8 @@ function addToArray() {
   else if(index<0) {
     alert('Отрицательно');
   }
-  animals[index] = document.querySelector(".array-element").value;
-  showAnimal(animals, ".out-1-source-img");
+  animals[index] = document.querySelector('.array-element').value;
+  showAnimal(animals, '.out-1-source-img');
 }
 
-document.querySelector(".add-to-array").onClick = addToArray();
+document.querySelector('.add-to-array').onclick = addToArray;
