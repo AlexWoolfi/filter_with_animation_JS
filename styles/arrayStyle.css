@@ -1,0 +1,60 @@
+
+.container {
+ 
+    margin: 20px auto;
+    max-width: 1000px;
+}
+option {
+  margin-left: 10px;     
+}
+
+html,body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+select, input, button {
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.arrayimg::before {
+    content: "[";
+    font-size: 5rem;
+}
+.arrayimg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+   
+}
+.arrayimg::after {
+    content: "]";
+    font-size: 5rem;
+}
+
+.arrayimg img {
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+}
+
+.arrayimg div {
+    position: relative;
+}
+
+.arrayimg div span{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -20px;
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+}
+.out-1-source {
+    margin-bottom: 20px;
+}
