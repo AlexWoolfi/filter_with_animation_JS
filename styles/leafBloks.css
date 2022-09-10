@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+}
+
+a {
+    color: blue;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.button-footer {
+    display: none;
+}
+
+button {
+    font-size: 40px;
+    padding: 30px;
+}
+
+@media screen and (max-width:800px) {
+    .button-footer {
+        display: block;
+    }
+    .hide-section {
+        display: none;
+    }
+}
