@@ -32,3 +32,4 @@ let a6 = arr.reduce( (result, item) => {
 }, []);
 console.log('Reduce = ' + a6);
 
+
