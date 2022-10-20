@@ -33,7 +33,7 @@
 // });
 // console.log('Flag = '+ flag);
 
-// //Каждый ли обект ...
+// // every Каждый ли обект ...
 // let res2 = odj.every(item => {
 //     return (item.level === 'hacer');
 // });
@@ -95,3 +95,127 @@
 // console.log(x);
 // x.splice(2,2,555);
 // console.log(x);
+
+
+//every - true/false. Проверка всех элементов массивов на установленное условие
+// const a = [4,5,6,7,8];
+// const c = [
+//     {'name': "Ivan",'age': 17},
+//     {'name': "inna",'age': 22},
+//     {'name': "serg",'age': 23},
+//     {'name': "anton",'age': 33}
+// ];
+// let b = a.every(item => {
+//      if(item > 3) {return true;}
+// });
+
+// console.log(b);
+
+// let f = c.every(item => {
+//     if(item.age >= 16) {return true;}
+// });
+
+// console.log(f);
+
+// //some true/false- есть ли хотя бы один элемент из условия
+// const c = [
+//     {'name': "Ivan",'age': 17},
+//     {'name': "inna",'age': 22},
+//     {'name': "serg",'age': 23},
+//     {'name': "anton",'age': 33}
+// ];
+
+// let f = c.some(item => {
+//     if(item.age === 17) {return true;}
+// });
+
+// console.log(f);
+
+// //find  - запускает цикл по массиву, до тех пор пока не найдет элемент и вернет значение
+// // если не найден - возвращает undefinded
+// const a = [2,3,4,5];
+
+// let b = a.find(item => {
+//     if(item === 4) {
+//         return true;
+//     }
+// });
+
+// console.log(b); 
+
+// // С диапозоном
+// let c = a.find(item => {
+//     if(item >= 2 && item <=4.5) {
+//         return true;
+//     }
+// });
+
+// console.log(c); 
+
+// const l = [
+//     {name: 'ivan', age: 54},
+//     {name: 'alex', age: 46},
+//     {name: 'dimon', age: 34},
+//     {name: 'vasya', age: 25},
+//     {name: 'kolya', age: 11}
+// ]
+
+// let v = l.find(item => {
+//     if(item.age <=18) {
+//         return true;
+//     }
+// });
+
+// console.log(v); 
+
+// let m = l.find(item => {
+//     if(item.age > 18) {
+//         return true;
+//     }
+// });
+
+// console.log(m); 
+
+// //findidex - возвращает индекс элемента из условия, если false возвращает -1
+
+// const x = [22,33,44,55,66,77];
+
+// let e = x.findIndex(item => {
+//     if(item > 80) {
+//         return true;
+//     }
+// });
+// console.log(e);
+
+// //lastIndexOf - ищет индекс последнего вхождения элемента в объекте
+// const d = "hello";
+// let s = d.lastIndexOf('l');
+// let k = x.lastIndexOf(55);
+// console.log(s);
+// console.log(k);
+
+// //TypeOf
+// let a = 555;
+// console.log(typeof(a));
+
+// // К null - возвращает object
+// console.log(typeof(null));
+
+// let b = {};
+// console.log(typeof(b));
+
+// //проверка
+// if((b !== null) && (typeof(b) === 'object'));
+
+// // NaN - возвращает number
+//  console.log(typeof(NaN));
+
+
+// // с функциями
+// function hi() {};
+// console.log(typeof(hi));
+
+
+
+
+
